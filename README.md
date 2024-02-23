@@ -7,8 +7,6 @@
 The TaskTrek Platform is a robust framework designed to accelerate the development of business applications, such as CRM systems. 
 This repository includes several applications, such as Chat, Project Management, CRM, HRM, and ATS. 
 
-![TaskTrek](https://task-trek.io/_astro/dark-kanban.51390fd6_vIfr7.webp)
-
 ## Table of Content
 
 - [Pre-requisites](#pre-requisites)
