@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush-project.schema.json",
+  "incrementalBuildIgnoredGlobs": [
+    "lib/**", 
+    "rush-logs/**",
+    "coverage/**",
+    ".rush/**",
+    ".build/**"
+  ],
+  "disableBuildCacheForProject": false,
+
+  "operationSettings": [
+    {
+      "operationName": "build",
+      "outputFolderNames": ["dist", ".build"]
+    },
+    {
+      "operationName": "package",
+      "outputFolderNames": ["dist", ".build"]
+    },
+    {
+      "operationName": "test",
+      "outputFolderNames": ["coverage"]
+    },
+    {
+      "operationName": "build:watch",
+      "outputFolderNames": ["dist", ".build"]
+    },
+    {
+      "operationName": "format",
+      "outputFolderNames": [".rush/temp/.format"]
+    },
+    {
+      "operationName": "_phase:build",
+      "outputFolderNames": ["lib", ".build"]
+    },
+    {
+      "operationName": "_phase:bundle",
+      "outputFolderNames": ["bundle"],
+      "disableBuildCacheForOperation": true
+    },
+    {
+      "operationName": "_phase:package",
+      "outputFolderNames": ["dist"]
+    },
+    {
+      "operationName": "_phase:test",
+      "outputFolderNames": ["coverage"]
+    }
+  ]
+}
