@@ -83,11 +83,6 @@ sh ./scripts/create-workspace.sh
 
 Accessing the URL http://localhost:8087 will lead you to the app in production mode.
 
-Limitations:
-
-- Local installation does not allow sending emails, so password recovery and notification to email functionalities are not working.
-- Integrations with Telegram, Gmail, and other content sources are available only as Docker containers, built from private repository sources. However, these integrations can be used with the platform.
-
 ## Run in development mode
 
 Development mode allows for live reloading and a smoother development process.
