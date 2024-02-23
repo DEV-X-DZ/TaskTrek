@@ -1,21 +1,13 @@
 # TaskTrek Platform
 
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/task-trek_io?style=for-the-badge)](https://x.com/task-trek_io)
-![GitHub License](https://img.shields.io/github/license/hcengineering/platform?style=for-the-badge)
-
 ⭐️ Your star shines on us. Star us on GitHub!
 
 ## About
 
 The TaskTrek Platform is a robust framework designed to accelerate the development of business applications, such as CRM systems. 
 This repository includes several applications, such as Chat, Project Management, CRM, HRM, and ATS. 
-Various teams are building products on top of the Platform, including [TaskTrek](https://task-trek.io) and [TraceX](https://tracex.co).
 
 ![TaskTrek](https://task-trek.io/_astro/dark-kanban.51390fd6_vIfr7.webp)
-
-## Activity
-
-![Alt](https://repobeats.axiom.co/api/embed/c42c99e21691fa60ea61b5cdf11c2e0647621534.svg "Repobeats analytics image")
 
 ## Table of Content
 
@@ -26,10 +18,6 @@ Various teams are building products on top of the Platform, including [TaskTrek]
 - Development mode
   - [Run in development mode](#run-in-development-mode)
   - [Update project structure and database](#update-project-structure-and-database)
-  - Tests
-    - [Tests](#tests)
-    - [Unit tests](#unit-tests)
-    - [UI tests](#ui-tests)
   - [Package publishing](#package-publishing)
 
 ## Pre-requisites
@@ -143,49 +131,3 @@ In cases where the project fails to build for any logical reason, try the follow
 ```bash
 rush update
 rush build --clean
-```
-
-## Tests
-
-### Unit tests
-
-```bash
-rush test # To execute all tests
-
-rushx test # For individual test execution inside a package directory
-```
-
-### UI tests
-
-```bash
-cd ./tests
-rush build
-rush bundle
-rush docker:build
-## creates test Docker containers and sets up test database
-./prepare.sh
-## runs UI tests
-rushx uitest
-```
-
-To execute tests in the development environment, please follow these steps:
-
-```bash
-cd ./tests
-./create-local.sh ## use ./restore-local.sh if you only want to restore the workspace to a predefined initial state for sanity.
-cd ./sanity
-rushx dev-uitest # To execute all tests against the development environment.
-rushx dev-debug -g 'pattern' # To execute tests in debug mode with only the matching test pattern.
-```
-
-## Package publishing
-
-```bash
-node ./common/scripts/bump.js -p projectName
-```
-
-## Additional testing
-
-This project is tested with BrowserStack.
-
-<sub><sup>&copy; 2024 Hardcore Engineering Inc.</sup></sub>
