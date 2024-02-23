@@ -1,7 +1,5 @@
 # TaskTrek Platform
 
-⭐️ Your star shines on us. Star us on GitHub!
-
 ## About
 
 The TaskTrek Platform is a robust framework designed to accelerate the development of business applications, such as CRM systems. 
